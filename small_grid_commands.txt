@@ -1,0 +1,3 @@
+sass C:/Users/austo/source/tests/small_grid/src/assets/scss/main.scss C:/Users/austo/source/tests/small_grid/min/min.css
+
+sass C:/Users/austo/source/tests/small_grid/src/assets/scss/_grid.scss C:/Users/austo/source/tests/small_grid/min/min_grid.css
