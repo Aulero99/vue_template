@@ -1,11 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import jsonImporter from "node-sass-json-importer"
-import uncss from "postcss-uncss"
-import autoprefixer from "autoprefixer"
-
-// import pluginPurgeCss from "@mojojoejo/vite-plugin-purgecss";
-// pluginPurgeCss()
+import pluginPurgeCss from "@mojojoejo/vite-plugin-purgecss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -25,15 +21,16 @@ export default defineConfig({
         }
       }
     }
-  })
+  }),
+  pluginPurgeCss()
 ],
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     sourcemap: false
   },
   server:{
-    host: false,
-    port: 5235,
+    host: true,
+    port: 8000,
     watch: {
       usePolling: true
     }

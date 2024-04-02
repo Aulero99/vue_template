@@ -1,23 +1,7 @@
 @use "sass:map";
 
+@import "suspendors";
 @import "./_variables.scss";
 @import "./_themes.scss";
 @import "./_root.scss";
-
-$bg: lighten(map.get($theme, "tangerine"), 17%);
-$border: darken($bg, 10%);
-$txt: darken($bg, 95%);
-
-
-.example{
-  background-color: $bg;
-  border: solid 1px $border;
-  color: $txt;
-  text-align: center;
-}
-
-.example-2{
-  background-color: darken($bg, 10%);
-  border: solid 1px darken($border, 10%);
-  color: $txt;
-}
+@import "./_navigation.scss";

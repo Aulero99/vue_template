@@ -28,6 +28,8 @@
 
 <style lang="scss" scoped>
 @import "../assets/scss/_variables.scss";
+@import "../assets/scss/_themes.scss";
+
 .hidden-footer{
     position: fixed;
     top: 0;

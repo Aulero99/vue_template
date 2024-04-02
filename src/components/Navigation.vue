@@ -1,20 +1,18 @@
 <template>
-  <nav>
+  <nav class="main-navigation e-3 flex-row justify-center px-3">
+    <div class="logo ps-2 d-none d-xs-flex">
+        Vue Template
+    </div>
     <ul>
-        <li>
+        <li class="px-4 px-xs-2">
             <router-link :to="{ name: 'Home' }">
                 Home
             </router-link>
         </li>
-        <li>
+        <li class="px-4 px-xs-2">
             <router-link :to="{ name: 'Cards' }">
                 Cards
             </router-link>
-        </li>
-        <li>
-            <!-- <router-link :to="{ name: 'About' }">
-                About
-            </router-link> -->
         </li>
     </ul>
   </nav>
@@ -22,9 +20,6 @@
   
 <script>
   export default {
-    props:{
-
-    },
     setup() {
       return {
   
@@ -35,17 +30,6 @@
 
 <style lang="scss">
 @import "../assets/scss/_variables.scss";
-// @import "suspendors";
-nav{
-    ul{
-        display: flex;
-        flex-direction: row;
-        li{
-            display: block;
-            list-style: none;
-            padding: 0 pad(1);
-        }
-    }
-}
+@import "../assets/scss/_themes.scss";
 
 </style>

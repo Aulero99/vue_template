@@ -5,10 +5,6 @@ function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
 }
 
-function importPages(){
-    
-}
-
 const routes = [
   {
     path: '/',
@@ -40,11 +36,6 @@ const routes = [
 //     name: 'Account',
 //     component: loadPage('AccountPage'),
 //     beforeEnter: authGuard
-//   },
-//   {
-//     path: '/vault/:id',
-//     name: 'Vault',
-//     component: loadPage('VaultPage')
 //   }
 ]
 

@@ -1,9 +1,10 @@
 import { reactive } from 'vue';
-import vars from './assets/variables.json'
+import { Card } from './models/Card';
+import { dev } from './env';
 
 export const AppState = reactive({
     /** @type {Boolean} */
-    dev: vars.dev,
-    /** @type {[]} */
-    arr: [],
+    dev: dev,
+    /** @type {[import('./models/Card.js').Card{}]} */
+    cards: []
 })

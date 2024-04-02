@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-// import '@mdi/font/css/materialdesignicons.css';
+import '@mdi/font/css/materialdesignicons.css';
 import 'suspendors';
 import App from './App.vue';
 import { router } from './router';

@@ -1,7 +1,5 @@
 <template>
-  <header> 
-    <Navigation/>
-  </header>
+  <Navigation/>
   <main class="default-content">
     <router-view />
   </main>
@@ -14,16 +12,17 @@
 import { computed, onBeforeMount, onMounted } from 'vue';
 // @ts-ignore
 import { AppState } from './AppState';
+import { logger } from './utils/Logger';
 
 export default {
 
   setup(){
 
     onBeforeMount(()=>{
-      if(AppState.dev){ console.log('onBeforeMounted') }
+      if(AppState.dev){ logger.log('onBeforeMounted') }
     })
     onMounted(()=>{ 
-      if(AppState.dev){ console.log('onMounted') }
+      if(AppState.dev){ logger.log('onMounted') }
     })
 
     return{ 
@@ -35,8 +34,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "suspendors";
 @import "./assets/scss/main.scss";
+
 .default-content{
     min-height: vol(12);
     background-color: white;
