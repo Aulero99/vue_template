@@ -17,6 +17,9 @@
 
             </div>
         </s-col-12>
+        <s-col-4> Content 1 </s-col-4>
+        <s-col-4> Content 2 </s-col-4>
+        <s-col-4> Content 3</s-col-4>
     </s-row>
   </s-container>
 </template>
